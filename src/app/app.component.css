@@ -1,0 +1,34 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; /* Certifique-se de que não há margens externas */
+  padding: 0; /* Certifique-se de que não há preenchimento interno */
+}
+  .centered-header {
+    text-align: center; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Isso garante que o texto ocupe toda a altura do cabeçalho */
+  }
+  
+  .large-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 50px; /* Tamanho da fonte ajustado, você pode personalizar o valor conforme necessário */
+    margin-top: 20px;
+  }
+  
+  .custom-password {
+    width: 100%; /* Substitua com a largura desejada */
+    /* Adicione outros estilos personalizados conforme necessário */
+  }
+  
+  
+  
+  

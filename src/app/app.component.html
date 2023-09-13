@@ -1,0 +1,37 @@
+<div class="center-container"> 
+<p-card header="Sistema de  Registro de Ponto" subheader="Bem-vindo(a)!" [style]="{ width: '800px'} ">
+  <ng-template pTemplate="header">
+      <img alt="Card" src="../assets/img/ponto-eletronico-digital.jpg" />
+  </ng-template>
+  <p>
+      Bem- vindo ao Sistema de Registo de Ponto. Aqui você poderá registrar o inicio e o fim do expediente! <br>
+      Realize o Login para prosseguir:
+  </p>
+  <ng-template pTemplate="footer">
+    <table class="p-table p-table-horizontal">
+      <tbody>
+        <tr>
+          <td>
+            <span class="p-float-label">
+              <input pInputText id="username" [(ngModel)]="login" />
+              <label for="username">CPF</label>
+            </span>
+          </td>
+          <td>
+            <span class="p-float-label">
+              <p-password [(ngModel)]="password" [feedback]="false"></p-password>
+              <label for="password">Senha</label>
+            </span>
+          </td>
+          <td>
+            <p-button icon="pi pi-check" (click)="onLoginSubmit()"></p-button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="error-message" *ngIf="loginFailed">Credenciais inválidas. Tente novamente.</div>
+  </ng-template>
+</p-card>
+</div>
+
+<router-outlet></router-outlet>
